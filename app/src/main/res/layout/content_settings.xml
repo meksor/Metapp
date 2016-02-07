@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:id="@+id/slackIPContainer"
+        android:layout_marginTop="?attr/actionBarSize">
+        <TextView android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Slackomatic"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="10pt"></TextView>
+    <EditText
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slackoIP"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin" android:layout_below="@id/slackIPContainer">
+        <TextView android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Screeninvader"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="10pt"></TextView>
+        <EditText
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/screenIP"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_screeninvader" android:icon="@drawable/ic_si_logo"
+            android:title="Screeninvader" />
+        <item android:id="@+id/nav_slackomatic" android:icon="@drawable/ic_slackomatic_logo"
+            android:title="Slackomatic" />
+        <item android:id="@+id/nav_karaoke" android:icon="@drawable/ic_karaoke_mic"
+            android:title="Karaoke" />
+        <item android:id="@+id/nav_issues" android:icon="@drawable/ic_issues"
+            android:title="Issues" />
+        <item android:id="@+id/nav_tools" android:icon="@drawable/ic_options"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Support!">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+            <item android:id="@+id/nav_github" android:icon="@drawable/ic_github_logo"
+                android:title="Github" />
+        </menu>
+    </item>
+</menu>
