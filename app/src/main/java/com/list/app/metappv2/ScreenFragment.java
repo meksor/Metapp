@@ -59,7 +59,7 @@ implements FloatingActionButton.OnClickListener{
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.play) {
-            if (playerPaused != true) {
+            if (!playerPaused) {
                 sendSICommand("playerPause");
             } else {
                 sendSICommand("playerPlay");
@@ -181,19 +181,10 @@ implements FloatingActionButton.OnClickListener{
             @Override
             public void run() {
 
-            if (playerPaused == true) {
-
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (playerPaused) {
                     playButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_play_arrow_white_18dp, getContext().getTheme()));
-                } else {
-                    playButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_play_arrow_white_18dp));
-                }
             } else {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     playButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_pause_white_18dp, getContext().getTheme()));
-                } else {
-                    playButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_pause_white_18dp));
-                }
             }
 
             }
