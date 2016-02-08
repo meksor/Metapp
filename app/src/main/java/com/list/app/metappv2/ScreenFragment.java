@@ -80,7 +80,9 @@ implements FloatingActionButton.OnClickListener{
     public void sendSICommand(String command) {
         String fullcommand = "[" + "\"publish\", \"" + command + "\",\"W\" " + "]";
         try {
-            mWebSocketClient.send(fullcommand);
+            if (mWebSocketClient.getConnection() != null) {
+                mWebSocketClient.send(fullcommand);
+            }
         }catch (Exception e){
             notifyUser("Websocket Fuckup");
             e.printStackTrace();
@@ -105,7 +107,6 @@ implements FloatingActionButton.OnClickListener{
 
             @Override
             public void onMessage(String s) {
-
                 parseMessage(s);
             }
 
@@ -121,6 +122,7 @@ implements FloatingActionButton.OnClickListener{
             }
         };
         mWebSocketClient.connect();
+        mWebSocketClient.getReadyState();
     }
 
     public void parseMessage (String s) {
