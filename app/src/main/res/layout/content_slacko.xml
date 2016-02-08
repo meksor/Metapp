@@ -90,7 +90,7 @@
             android:textSize="15pt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Input"
+            android:text="Lighting"
             android:id="@+id/inputTextView"
             android:textColor="@color/colorTextPrimary"/>
 
@@ -100,7 +100,7 @@
             android:textSize="15pt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lighting"
+            android:text="Input"
             android:id="@+id/lightingTextView"
             android:textColor="@color/colorTextPrimary"/>
     </RelativeLayout>
