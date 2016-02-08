@@ -175,6 +175,7 @@ implements FloatingActionButton.OnClickListener{
         try {
             currentItemUrl = playerObject.getString("url");
         } catch (Exception e){
+            notifyUser("Websocket Fuckup");
             e.printStackTrace();
         }
         getActivity().runOnUiThread(new Runnable() {
