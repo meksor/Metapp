@@ -82,7 +82,7 @@ implements FloatingActionButton.OnClickListener{
         try {
             mWebSocketClient.send(fullcommand);
         }catch (Exception e){
-            mWebSocketClient.close();
+            notifyUser("Websocket Fuckup");
             e.printStackTrace();
         }
     }
