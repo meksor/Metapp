@@ -5,6 +5,7 @@ package com.list.app.metappv2;
  */
 public class playItem {
     String title;
+    String category;
     String desc;
     String length;
 }
