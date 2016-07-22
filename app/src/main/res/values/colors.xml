@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimaryLight">#6681A0</color>
     <color name="colorPrimary">#1C3654</color>
     <color name="colorPrimaryDark">#182E46</color>
     <color name="colorAccent">#CC6427</color>
     <color name="colorTextPrimary">#000000</color>
+
+    <color name= "btn_state_on">#ffffff</color>
+    <color name= "btn_state_off">#B3ffffff</color>
 
 </resources>

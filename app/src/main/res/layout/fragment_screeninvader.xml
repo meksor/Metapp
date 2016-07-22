@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <ListView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:divider="@drawable/divider_listview"
+        android:id="@+id/listview_screeninvader"/>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:elevation="12dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:outlineProvider="bounds">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:layout_height="24dp"
+                android:layout_width="24dp"
+                android:layout_gravity="center"
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/btn_airplay"
+                android:background="@drawable/playerbar_btn_airplay"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:layout_height="36dp"
+                android:layout_width="36dp"
+                android:layout_gravity="center"
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/btn_back"
+                android:background="@drawable/ic_fast_rewind_white_24dp"/>
+        </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:layout_height="36dp"
+                android:layout_width="36dp"
+                android:layout_gravity="center"
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/btn_play"
+                android:background="@drawable/playerbar_btn_play"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:layout_gravity="center"
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/btn_forw"
+                android:background="@drawable/ic_fast_forward_white_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:layout_height="24dp"
+                android:layout_width="24dp"
+                android:layout_gravity="center"
+                android:textOff=""
+                android:textOn=""
+                android:id="@+id/btn_volume"
+                android:background="@drawable/playerbar_btn_volume"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -14,4 +14,10 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- PlayerBar Checkbox styles -->
+    <style name="playerbar_btn" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/btn_state_on</item>
+        <item name="colorControlActivated">@color/btn_state_off</item>
+    </style>
+
 </resources>
